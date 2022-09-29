@@ -6,7 +6,7 @@
 - Queue(LinkedList,PriorityQueue)
 - Map(SortedMap(TreeMap), Hasgtable,LinkedHashMap,HashMap)
 
-
+Set
 - Set은 List와 다르게, **중복된 값을 허용하지 않으며, 순서가 보장되지 않고 저장된다**
 - A,B,C는 모두 HashSet객체. A={1,2,3} B={3,4,5}, C={1,2}
 - A.containsAll(B); -> B는 A의 부분집합이 아니다 = B의 모든 원소가 A에 포함되나? -> return false
@@ -15,7 +15,7 @@
 - A.retainAll(B) -> A와 B의 교집합 -> {3}
 - A.removeAll(B) -> A에서 B를 뺀 차집합 -> {1,2}
 
-
+List
 - List는 순서가 보장되므로, 데이터의 순서를 가르키기 위한 주소값(인덱스)를 갖고 있다.
 - get(index)로 해당 위치에해당하는 데이터를 꺼낼수 있다.
 - ArrayList는 List를 상속받은 클래스로, 배열과 동일하게 연속된 메모리 공간을 갖으며, 인덱스는0부터 시작한다.
@@ -34,6 +34,7 @@
 - 추가/삭제가 필요없거나 순차적으로 데이터를 추가/삭제 할경우 ArrayList > LinkedList 효율적
 - 중간에 데이터가 추가/삭제 하는경우, LinkedList > ArrayList 효율적(메모리측면)
 
+Map
 - Map은 Key와 Value로 데이터를 저장한다. key값은 중복을 허용하지 않으며, 중복시 기존Value는 바뀌게 된다. Value는 중복이 가능하다.
 - new HashMap<key(데이터 타입), value(값)>
 - a.put("one", 1); "one"키 값으로 1의 값을 넣는다.
