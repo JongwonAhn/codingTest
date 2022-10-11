@@ -26,6 +26,10 @@ public class Test04 {
 
 class Test05{
 
+    static private void instance(){
+
+    }
+
     void sum(String...strings){
         System.out.println(strings.length);
     }
