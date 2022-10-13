@@ -36,4 +36,7 @@ public class String06 {
         System.out.println(test.solution(input));
         sc.close();
     }
+
 }
+
+
