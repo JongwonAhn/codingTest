@@ -23,7 +23,7 @@ public class Array08 {
 
         int num = arr.length;
         int answer[] = new int[num];
-        
+
         for(int i = 0; i < num; i++){
             int cnt = num + 1;
             for(int j = 0; j < num; j++){
