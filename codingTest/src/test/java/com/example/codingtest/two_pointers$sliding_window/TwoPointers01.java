@@ -19,7 +19,7 @@ package com.example.codingtest.two_pointers$sliding_window;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class two_pointers01 {
+public class TwoPointers01 {
 
     public ArrayList<Integer> solution(int[] arrA,int[] arrB){
 
@@ -46,7 +46,7 @@ public class two_pointers01 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        two_pointers01 test = new two_pointers01();
+        TwoPointers01 test = new TwoPointers01();
 
         int arrACnt = sc.nextInt();
         int[] arrA = new int[arrACnt];

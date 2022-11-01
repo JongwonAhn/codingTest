@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class two_pointers02 {
+public class TwoPointers02 {
 
     public ArrayList<Integer> solution(int[] arrA,int[] arrB){
 
@@ -46,7 +46,7 @@ public class two_pointers02 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        two_pointers02 test = new two_pointers02();
+        TwoPointers02 test = new TwoPointers02();
 
         int arrACnt = sc.nextInt();
         int[] arrA = new int[arrACnt];
