@@ -1,24 +1,25 @@
 package com.example.codingtest.two_pointers$sliding_window;
 
-/* 22.11.01
+/* 22.11.02
 설명
- N개의 수로 이루어진 수열이 주어집니다.
- 이 수열에서 연속부분수열의 합이 특정숫자 M이 되는 경우가 몇 번 있는지 구하는 프로그램을 작성하세요
- 만약 N = 8, M = 6 이고 수열이 다음과 같다면
- 1 2 1 3 1 1 1 2
- 합이 6이 되는 연속부분수열은 {2, 1, 3},{1, 3, 1, 1},{3, 1, 1, 1}로 총 3가지 입니다.
+ 0과 1로 구성된 길이가 N인 수열이 주어집니다. 여러분은 이 수열에서
+ 최대 k번을 0을 1로 변경할수 있습니다. 여러분이 최대 k번의 변경을 통해 이 수열에서
+ 1로만 구성된 최대 길이의 연속부분수열을 찾는 프로그램을 작성하세요.
+ 만약 길이가 14인 다음과 같은 수열이 주어지고 k = 2라면
+ 1 1 0 0 1 1 0 1 1 0 1 1 0 1 여러분이 만들수 있는 1비 연속된 연속 부분수열은
+ 1 1 0 0[1 1 1 1 1 1 1 1]0 1 이며 그 길이는 8 입니다.
 
 입력
- 첫째 줄에 N(1 <= N <= 100,000), M(1 <= M <= 100,000,000)이 주어진다.
- 수열의 원소값은 1,000 을 넘지 않는 자연수 이다.
+ 첫 번째 줄에 수열의 길이인 자연수 N(5 <= N < 100,000)이 주어집니다.
+ 두 번째 줄에 N길이의 0과 1로 구성된 수열이 주어집니다.
 
 출력
- 첫 줄에 최대 매출액을 출력합니다.
+ 첫 줄에 최대 길이를 출력하세요.
  */
 
 import java.util.Scanner;
 
-public class SlidingWindow02 {
+public class TwoPointers04 {
 
     public int solution(int[] arr, int Size){
 
@@ -44,7 +45,7 @@ public class SlidingWindow02 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        SlidingWindow02 test = new SlidingWindow02();
+        TwoPointers04 test = new TwoPointers04();
 
         int cnt = sc.nextInt();
         int Size = sc.nextInt();
@@ -55,5 +56,6 @@ public class SlidingWindow02 {
 
         System.out.println(test.solution(arr, Size));
         sc.close();
+
     }
 }
