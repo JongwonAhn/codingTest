@@ -18,6 +18,10 @@ package com.example.codingtest.two_pointers$sliding_window;
  첫 줄에 최대 길이를 출력하세요
  */
 
+import org.springframework.boot.autoconfigure.mail.MailProperties;
+
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class TwoPointers05 {
@@ -55,5 +59,9 @@ public class TwoPointers05 {
 
         System.out.println(test.solution(arr, n, k));
         sc.close();
+
     }
+
+
 }
+
