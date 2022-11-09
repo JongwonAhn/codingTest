@@ -34,7 +34,6 @@ public class HashMap02 {
             map2.put(i, word2.charAt(i));
         }
         for (int x : map1.keySet()) {
-                if()
         }
         return answer;
     }
