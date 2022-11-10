@@ -1,6 +1,6 @@
 package com.example.codingtest.hashMap$treeSet;
 
-/* 22.11.08
+/* 22.11.10
 설명
  Anagram이란 두 문자열이 알파벳의 나열 순서는 다르지만 그 구성이 일치하면 두 단어는 아나그램이라고 한다.
  예를 들면 AbaAeCe와 baeeACA 는 알파벳의 나열 순서는 다르지만 그 구성을 살펴보면
@@ -24,17 +24,22 @@ public class HashMap02 {
 
     public String solution(String word1, String word2){
 
-        String answer = "";
+        String answer = "YES";
         int len = word1.length();
-        HashMap<Integer, Character> map1 = new HashMap<>();
-        HashMap<Integer, Character> map2 = new HashMap<>();
 
-        for(int i = 0; i < len; i++){
-            map1.put(i, word1.charAt(i));
-            map2.put(i, word2.charAt(i));
+        HashMap<Character, Integer> map = new HashMap<>();
+
+        for (char x: word1.toCharArray()) {
+            map.put(x, map.getOrDefault(x, 0)+1);
         }
-        for (int x : map1.keySet()) {
+
+        for (char x: word2.toCharArray()) {
+            if(!map.containsKey(x) || map.get(x) == 0){
+                return answer = "NO";
+            }
+            map.put(x, map.get(x)-1);
         }
+
         return answer;
     }
     public static void main(String[] args) {
